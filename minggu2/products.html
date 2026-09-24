@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products - QwennGlasses</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+<div class="flex min-h-screen">
+  <aside class="w-64 bg-slate-900 text-slate-300 flex flex-col shrink-0">
+    <div class="h-16 flex items-center px-6 text-white font-semibold text-lg border-b border-slate-800">QwenGlasses</div>
+    <nav class="flex-1 px-3 py-4 space-y-1">
+      <a href="dashboard.html" class="block px-3 py-2 rounded-md hover:bg-slate-800 hover:text-white">Dashboard</a>
+      <a href="products.html" class="block px-3 py-2 rounded-md bg-slate-800 text-white">Products</a>
+      <a href="#" class="block px-3 py-2 rounded-md hover:bg-slate-800 hover:text-white">Users</a>
+      <a href="#" class="block px-3 py-2 rounded-md hover:bg-slate-800 hover:text-white">Setting</a>
+    </nav>
+    <div class="p-3 border-t border-slate-800">
+      <a href="index.html" class="block px-3 py-2 rounded-md text-red-400 hover:bg-slate-800">Logout</a>
+    </div>
+  </aside>
+  <div class="flex-1 flex flex-col">
+    <header class="h-16 bg-white border-b border-slate-200 flex items-center justify-between px-6">
+      <h1 class="text-lg font-semibold">Products</h1>
+      <div class="w-9 h-9 rounded-full bg-cyan-500 text-white flex items-center justify-center text-sm font-medium">Q</div>
+    </header>
+    <main class="flex-1 p-6">
+      <div class="flex items-start justify-between mb-6">
+        <div>
+          <h2 class="text-2xl font-semibold">Manajemen Produk</h2>
+          <p class="text-sm text-slate-500 mt-1">Koleksi kacamata yang sedang kamu jual.</p>
+        </div>
+        <a href="add-produk.html" class="flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-medium px-4 py-2 rounded-md">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          Add Product
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <div class="bg-white rounded-lg border border-slate-200 overflow-hidden group">
+          <div class="h-40 bg-amber-50 relative">
+            <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-medium px-2 py-0.5 rounded z-10">12% off</span>
+            <img src="images/6.jpg" alt="Rectangle Frame" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4">
+            <p class="font-medium text-slate-900">Rectangle Frame</p>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-cyan-600 font-semibold">Rp 350.000</span>
+              <span class="text-slate-400 text-xs line-through">Rp 400.000</span>
+            </div>
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-xs text-slate-500">Stok: 24</span>
+              <div class="flex items-center gap-1">
+                <a href="edit-produk.html" class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-slate-100 hover:text-cyan-600" title="Edit">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </a>
+                <button class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-red-50 hover:text-red-500" title="Delete">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m2 0-1 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1L5 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-slate-200 overflow-hidden group">
+          <div class="h-40 bg-cyan-50">
+            <img src="images/5.jpg" alt="Round Vintage" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4">
+            <p class="font-medium text-slate-900">Round Vintage</p>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-cyan-600 font-semibold">Rp 275.000</span>
+            </div>
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-xs text-slate-500">Stok: 18</span>
+              <div class="flex items-center gap-1">
+                <a href="edit-produk.html" class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-slate-100 hover:text-cyan-600" title="Edit">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </a>
+                <button class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-red-50 hover:text-red-500" title="Delete">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m2 0-1 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1L5 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-slate-200 overflow-hidden group">
+          <div class="h-40 bg-slate-100 relative">
+            <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-medium px-2 py-0.5 rounded z-10">18% off</span>
+            <img src="images/3.jpg" alt="Wayfarer Bold" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4">
+            <p class="font-medium text-slate-900">Wayfarer Bold</p>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-cyan-600 font-semibold">Rp 310.000</span>
+              <span class="text-slate-400 text-xs line-through">Rp 380.000</span>
+            </div>
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-xs text-amber-600 font-medium">Stok: 4</span>
+              <div class="flex items-center gap-1">
+                <a href="edit-produk.html" class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-slate-100 hover:text-cyan-600" title="Edit">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </a>
+                <button class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-red-50 hover:text-red-500" title="Delete">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m2 0-1 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1L5 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-slate-200 overflow-hidden group">
+          <div class="h-40 bg-rose-50">
+            <img src="images/4.jpg" alt="Cat Eye Elegance" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4">
+            <p class="font-medium text-slate-900">Cat Eye Elegance</p>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-cyan-600 font-semibold">Rp 290.000</span>
+            </div>
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-xs text-slate-500">Stok: 15</span>
+              <div class="flex items-center gap-1">
+                <a href="edit-produk.html" class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-slate-100 hover:text-cyan-600" title="Edit">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </a>
+                <button class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-red-50 hover:text-red-500" title="Delete">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m2 0-1 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1L5 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-slate-200 overflow-hidden group">
+          <div class="h-40 bg-rose-50">
+            <img src="images/9.jpg" alt="Round Frame" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4">
+            <p class="font-medium text-slate-900">Round Frame</p>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-cyan-600 font-semibold">Rp 290.000</span>
+            </div>
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-xs text-slate-500">Stok: 21</span>
+              <div class="flex items-center gap-1">
+                <a href="edit-produk.html" class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-slate-100 hover:text-cyan-600" title="Edit">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </a>
+                <button class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-red-50 hover:text-red-500" title="Delete">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m2 0-1 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1L5 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-slate-200 overflow-hidden group">
+          <div class="h-40 bg-rose-50">
+            <img src="images/10.jpg" alt="Geometric Square Frame" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4">
+            <p class="font-medium text-slate-900">Geometric Square Frame</p>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-cyan-600 font-semibold">Rp 425.000</span>
+            </div>
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-xs text-slate-500">Stok: 32</span>
+              <div class="flex items-center gap-1">
+                <a href="edit-produk.html" class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-slate-100 hover:text-cyan-600" title="Edit">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </a>
+                <button class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-red-50 hover:text-red-500" title="Delete">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m2 0-1 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1L5 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-slate-200 overflow-hidden group">
+          <div class="h-40 bg-rose-50">
+            <img src="images/11.jpg" alt="Oval Sunglasses" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4">
+            <p class="font-medium text-slate-900">Oval Sunglasses</p>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-cyan-600 font-semibold">Rp 350.000</span>
+            </div>
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-xs text-slate-500">Stok: 40</span>
+              <div class="flex items-center gap-1">
+                <a href="edit-produk.html" class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-slate-100 hover:text-cyan-600" title="Edit">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </a>
+                <button class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-red-50 hover:text-red-500" title="Delete">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m2 0-1 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1L5 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-slate-200 overflow-hidden group">
+          <div class="h-40 bg-emerald-50 relative">
+            <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-medium px-2 py-0.5 rounded z-10">12% off</span>
+            <img src="images/2.jpg" alt="Round Frame" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4">
+            <p class="font-medium text-slate-900">Round Frame</p>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-cyan-600 font-semibold">Rp 265.000</span>
+              <span class="text-slate-400 text-xs line-through">Rp 300.000</span>
+            </div>
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-xs text-slate-500">Stok: 19</span>
+              <div class="flex items-center gap-1">
+                <a href="edit-produk.html" class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-slate-100 hover:text-cyan-600" title="Edit">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </a>
+                <button class="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 hover:bg-red-50 hover:text-red-500" title="Delete">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m2 0-1 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1L5 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="h-12 bg-white border-t border-slate-200 flex items-center justify-center text-sm text-slate-500">QwenGlasses more information can be found at our website.</footer>
+  </div>
+</div>
+</body>
+</html>
