@@ -1,0 +1,33 @@
+{
+    "target_host": "127.0.0.1",
+    "target_ip": "127.0.0.1",
+    "port_range": {
+        "start": 1,
+        "end": 1024
+    },
+    "scan_time": "2026-10-08 23:30:47",
+    "scan_duration": "0:06:53.127935",
+    "total_open_ports": 4,
+    "open_ports": [
+        {
+            "port": 135,
+            "status": "OPEN",
+            "estimated_service": "Lainnya/Custom"
+        },
+        {
+            "port": 445,
+            "status": "OPEN",
+            "estimated_service": "Lainnya/Custom"
+        },
+        {
+            "port": 902,
+            "status": "OPEN",
+            "estimated_service": "Lainnya/Custom"
+        },
+        {
+            "port": 912,
+            "status": "OPEN",
+            "estimated_service": "Lainnya/Custom"
+        }
+    ]
+}
